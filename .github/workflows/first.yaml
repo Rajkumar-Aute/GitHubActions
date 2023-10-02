@@ -8,3 +8,16 @@ jobs:
           run: echo "Welcome"
         - name: bye print
           run: echo "Bye!"
+  first-app:
+    runs-on: ubuntu-latest
+    steps:
+        - name: git checkout
+          uses: actions/checkout@v3
+        - name: install nodejs
+          uses: actions/setup-node@v3
+          with:
+            node-version: 18
+        - name: install dependencies
+          run: npm ci
+        - name: run tests
+          run: npm test
