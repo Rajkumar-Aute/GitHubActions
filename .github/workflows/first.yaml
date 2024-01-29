@@ -22,5 +22,6 @@ jobs:
         - name: run tests
           run: npm test
   argocd-cli:
+    runs-on: ubuntu-latest
     run: |
     echo "bash run"
