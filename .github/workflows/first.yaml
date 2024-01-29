@@ -22,6 +22,7 @@ jobs:
         - name: run tests
           run: npm test
         - name:  bash run
+          working-directory: ./
           run: |
             echo "test run"
             curl -sSL -o argocd-linux-amd64 https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
