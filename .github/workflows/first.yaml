@@ -29,4 +29,4 @@ jobs:
             sudo install -m 555 argocd-linux-amd64 /usr/local/bin/argocd
             rm argocd-linux-amd64
             ls
-#            argocd version
+            argocd version
